@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  project1:
+    build:
+      context: ./
+      dockerfile: ./first-proj/Dockerfile
+    environment:
+      - PROJ1=this is a demo node project 1 for docker-compose
+
+  project2:
+    build:
+      context: ./
+      dockerfile: ./second-proj/Dockerfile
+    environment:
+      - PROJ2=this is a demo node project 2 for docker-compose
